@@ -1,0 +1,48 @@
+﻿@model WebAppCRUD.Models.Alumnos
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Alumno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApePat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApePat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApeMat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApeMat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Semestre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Carrera)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Regresar</a>
+</div>
